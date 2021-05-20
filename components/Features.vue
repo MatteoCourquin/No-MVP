@@ -1,4 +1,5 @@
 <template>
+
   <div class='features'>
     <div class="feature" id='feature1'>
       <img src='../assets/images/logos/Phone.svg' alt='Phone'>
@@ -21,6 +22,7 @@
       <button class='btn-orange'>Start</button>
     </div>
   </div>
+
 </template>
 
 <script>

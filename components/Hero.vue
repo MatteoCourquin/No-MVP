@@ -28,26 +28,41 @@ export default {};
 <style scoped>
 
 .hero {
-  display: flex;
-  text-align: center;
-  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .section-text {
-  flex: auto;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  align-self: center;
+  justify-content: center;
 }
 
 .section-text > p {
-  margin: 30px 100px;
-  align-content: center;
-  text-align: left;
+ width: 500px;
+ margin: 40px;
 }
 
 .section-image {
-  margin: 0 30px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media screen and (max-width: 1200px) {
+  .hero{
+    grid-template-columns: 1fr;
+  }
+  .section-image{
+    margin: 50px 0 40px 0;
+  }
+  .section-text > p {
+    width: 80%;
+    margin: 40px;
+}
 }
 
 </style>

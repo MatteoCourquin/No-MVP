@@ -1,8 +1,9 @@
 <template>
   <div>
-    <h1>Section</h1>
+    <div class="background">
     <Features />
-    <DeatilsFeatures />
+    <DetailsFeatures />
+    </div>
   </div>
 </template>
 
@@ -10,4 +11,10 @@
 export default {};
 </script>
 
-<style></style>
+<style>
+.background {
+  background-color: var(--grey);
+  height: 1152px;
+  margin: -5%;
+}
+</style>
