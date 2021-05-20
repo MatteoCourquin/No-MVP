@@ -70,6 +70,7 @@ export default {};
   display: flex;
   text-align: center;
   padding: 10px;  
+  margin-top: 200px;
 }
 
 section {
