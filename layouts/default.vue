@@ -6,4 +6,5 @@
 
 <style>
 @import '@/assets/css/_colors.css';
+@import '@/assets/css/_reset.css';
 </style>
