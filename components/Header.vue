@@ -10,4 +10,10 @@
 export default {};
 </script>
 
-<style></style>
+<style scoped>
+
+button{
+  background-color: var(--vs-primary);
+}
+
+</style>

@@ -4,4 +4,6 @@
   </div>
 </template>
 
-<style></style>
+<style>
+@import '@/assets/css/_colors.css';
+</style>
