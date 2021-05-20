@@ -1,12 +1,17 @@
 <template>
-  <div class="navbar">
-        <img class="logo" src="../assets/images/logos/NoMVP_Orange.png" alt="logo">
+  <div class="header">
+    <img
+      class="logo"
+      src="../assets/images/logos/NoMVP_Orange.png"
+      alt="logo"
+    />
 
-        <NuxtLink class='nav-link' to ='/contact'>Contact</NuxtLink>
-        <NuxtLink class='nav-link' to ='/about'>About Us</NuxtLink>
-        <NuxtLink class='nav-link' to ='#'>nav-link</NuxtLink>
-        <NuxtLink class='nav-link' to ='#'>nav-link</NuxtLink>
-        <!-- <vs-button flat >Login</vs-button> -->
+    <div class="navbar">
+      <NuxtLink class="nav-link" to="/contact">Contact</NuxtLink>
+      <NuxtLink class="nav-link" to="/about">About Us</NuxtLink>
+      <NuxtLink class="nav-link" to="#">nav-link</NuxtLink>
+      <NuxtLink class="nav-link" to="#">nav-link</NuxtLink>
+    </div>
   </div>
 </template>
 
@@ -15,31 +20,33 @@ export default {};
 </script>
 
 <style scoped>
-
-.vs-navbar{
-  padding: 0 !important;
-}
-
-.navbar{
+.header {
   position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
-.logo{
+.navbar {
+  margin-top: 60px;
+  margin-right: 30px;
+}
+
+.logo {
   width: 100px;
-  margin: 20px;
+  margin: 30px;
 }
 
-.nav-link{
-  color: var(--vs-dark);
+.nav-link {
+  color: var(--grey);
+  margin: 30px;
 }
 
-.nav-link:hover{
-  color: var(--vs-primary);
-  transition: 0.2s;
-}
-
-.vs-navbar__item{
-  opacity: 1;
-  color: var(--vs-primary);
+@media screen and (max-width: 700px) {
+  .navbar {
+    display: none;
+  }
+  .menu-bg {
+    display: block;
+  }
 }
 </style>
