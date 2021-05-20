@@ -114,7 +114,7 @@ h5{
 
 i{
   margin-right: 30px;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 </style>
