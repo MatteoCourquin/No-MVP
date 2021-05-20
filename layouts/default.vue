@@ -5,6 +5,5 @@
 </template>
 
 <style>
-@import '@/assets/css/_colors.css';
-@import '@/assets/css/_reset.css';
+@import '@/assets/css/_style.css';
 </style>
