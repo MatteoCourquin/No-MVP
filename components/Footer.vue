@@ -17,12 +17,6 @@
       <NuxtLink class="nav-link" to="#">nav-link</NuxtLink>
       <NuxtLink class="nav-link" to="#">nav-link</NuxtLink>
       <NuxtLink class="nav-link" to="#">nav-link</NuxtLink>
-      <NuxtLink class="nav-link" to="#">nav-link</NuxtLink>
-      <NuxtLink class="nav-link" to="#">nav-link</NuxtLink>
-      <NuxtLink class="nav-link" to="#">nav-link</NuxtLink>
-      <NuxtLink class="nav-link" to="#">nav-link</NuxtLink>
-      <NuxtLink class="nav-link" to="#">nav-link</NuxtLink>
-      <NuxtLink class="nav-link" to="#">nav-link</NuxtLink>
     </div>
 
 
@@ -102,8 +96,9 @@ h5{
   margin: 30px;
   display: grid;
   grid-template-columns: 150px 100px;
-  grid-template-rows: 40px 40px 40px 40px 40px 40px 40px;
+  grid-template-rows: 40px 40px ;
   justify-content: center;
+  align-self: center;
 }
 
 .copyright{
