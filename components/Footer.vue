@@ -57,6 +57,7 @@ export default {
   width: 80%;
   margin: 0% 10%;
   margin-bottom: 50px;
+  margin-top: -100px;
 }
 
 .titre{

@@ -15,6 +15,6 @@ export default {};
 .background {
   background-color: var(--grey);
   height: auto;
-  padding-bottom: 300px;
+  padding-bottom: 500px;
 }
 </style>

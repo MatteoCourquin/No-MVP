@@ -14,7 +14,7 @@
 
     <div class="section-image">
 
-      <img src="../assets/images/undraw_building_websites_i78t 1.svg" alt="">
+      <img src="../assets/images/logoHero.svg" alt="">
 
     </div>
 

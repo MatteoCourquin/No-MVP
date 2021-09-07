@@ -2,7 +2,7 @@
 <div class="detailsFeatures">
   <section>
       <div class="section-image">
-        <img src="../assets/images/undraw_profile_image_re_ic2f 1.svg" alt="">
+        <img src="../assets/images/logoPhone.svg" alt="illustration d'un telephone portable">
       </div>
       <div class="section-text">
         <h4>Titre h4</h4>
@@ -34,7 +34,7 @@
         <button class="btn-orange"></button>
       </div>
        <div class="section-image">
-        <img src="../assets/images/undraw_profile_image_re_ic2f 1.svg" alt="">
+        <img src="../assets/images/logoChat.svg" alt="illustration de chat en ligne">
       </div>
     </section>
 
@@ -53,7 +53,7 @@
         <button class="btn-orange"></button>
       </div>
        <div class="section-image">
-        <img src="../assets/images/undraw_profile_image_re_ic2f 1.svg" alt="">
+        <img src="../assets/images/logoCalendar.svg" alt="illustration de calendrier">
       </div>
     </section>
 
@@ -99,8 +99,17 @@ p {
   text-align: left;
 }
 
+section:nth-child(3){
+  flex-direction: column;
+}
+
 .section-image {
   margin: 0 30px 0 0;
+}
+
+.section-image img{
+  height: 300px;
+  width: auto;
 }
 
 </style>
