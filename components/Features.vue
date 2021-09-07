@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="features">
     <div class="feature" id="feature1">
       <img src="../assets/images/logos/Phone.svg" alt="Phone" />
 
@@ -42,9 +42,13 @@ export default {};
 </script>
 
 <style scoped>
+
 .features {
   display: flex;
   justify-content: space-around;
+  position: absolute;
+  margin-top: -190px;
+  width: 100%;
 }
 
 .feature {

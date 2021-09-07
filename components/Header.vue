@@ -24,6 +24,7 @@ export default {};
   position: relative;
   display: flex;
   justify-content: space-between;
+  height: 15vh;
 }
 
 .navbar {
@@ -32,7 +33,8 @@ export default {};
 }
 
 .logo {
-  width: 100px;
+  width: 90px;
+  height: 90px;
   margin: 30px;
 }
 

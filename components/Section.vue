@@ -14,7 +14,7 @@ export default {};
 <style>
 .background {
   background-color: var(--grey);
-  height: 1152px;
-  margin: -5%;
+  height: auto;
+  padding-bottom: 300px;
 }
 </style>

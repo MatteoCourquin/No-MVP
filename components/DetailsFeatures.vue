@@ -19,7 +19,7 @@
       </div>
     </section>
 
-    <!-- <section>
+    <section>
        <div class="section-text">
         <h4>Titre h4</h4>
         <p>
@@ -55,7 +55,7 @@
        <div class="section-image">
         <img src="../assets/images/undraw_profile_image_re_ic2f 1.svg" alt="">
       </div>
-    </section> -->
+    </section>
 
 </div>
 </template>
@@ -68,9 +68,12 @@ export default {};
 
 .detailsFeatures {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   padding: 10px;  
-  margin-top: 200px;
+  position: relative;
+  top: 300px;
 }
 
 section {
@@ -81,6 +84,7 @@ section {
 
 h4,
 p {
+  max-width: 700px;
   color: #f3f3f3;
 }
 

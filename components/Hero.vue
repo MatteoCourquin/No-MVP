@@ -30,6 +30,8 @@ export default {};
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  height: 65vh;
+  margin-bottom: 20vh;
 }
 
 .section-text {
@@ -40,8 +42,8 @@ export default {};
 }
 
 .section-text > p {
- width: 500px;
- margin: 40px;
+  width: 500px;
+  margin: 40px;
 }
 
 .section-image {
