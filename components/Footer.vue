@@ -19,16 +19,18 @@
       <NuxtLink class="nav-link" to="#">nav-link</NuxtLink>
     </div>
 
+    <div class="footerSocialMedia-Copiright">
+      <div>
+        <p class='copyright'>© Copyright No-MVP {{  today  }} •</p>
+      </div>
 
-    <div>
-      <p class='copyright'>© Copyright No-MVP {{  today  }} •</p>
+      <div class='socialmedias'>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
     </div>
 
-    <div class='socialmedias'>
-      <i class="fab fa-facebook"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-instagram"></i>
-    </div>
   </div>
 </template>
 
@@ -49,11 +51,11 @@ export default {
 .footer{
   background: linear-gradient(177deg, #FFAE4F 0%, #DB873D 95.15%);
   box-shadow: 5.88605px 112.313px 224.933px rgba(51, 31, 14, 0.2085), inset -1.71349px -32.6954px 32.7403px #D2813A, inset 1.71349px 32.6954px 32.  7403px #FFB351;
-  border-radius: 30px;
+  border-radius: 40px;
   z-index: 1;
   display: grid;
   grid-template-columns: 50% 50%;
-  border-radius: 40px;
+  grid-template-rows: 1fr;
   width: 80%;
   margin: 0% 10%;
   margin-bottom: 50px;
@@ -80,6 +82,7 @@ h5{
 
 .texte{
   margin: 55px 0px;
+  text-align: justify;
 }
 
 .btn-black{
@@ -104,18 +107,46 @@ h5{
 
 .copyright{
   color: var(--white);
-  margin: 30px;
 }
 
-.socialmedias{
-  align-self: center;
-  justify-self: flex-end;
-  margin-right: 30px;
+.footerSocialMedia-Copiright{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  grid-column: 1 / 3;
 }
 
 i{
-  margin-right: 30px;
+  margin: 15px;
   font-size: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .footer{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer{
+    border-radius: 0px;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 0px;
+    margin-top: -100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .footerSocialMedia-Copiright{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .socialmedias{
+    margin-bottom: 20px;
+  }
 }
 
 </style>

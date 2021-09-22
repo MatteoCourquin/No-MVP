@@ -31,7 +31,8 @@ export default {};
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 65vh;
-  margin-bottom: 20vh;
+  min-height: 540px;
+  margin-bottom: max(150px, 20vh);
 }
 
 .section-text {
@@ -39,6 +40,7 @@ export default {};
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: justify;
 }
 
 .section-text > p {
@@ -50,6 +52,11 @@ export default {};
   display: flex;
   align-items: center;
   justify-content: center; 
+}
+
+.section-image img{
+  width: 400px;
+  height: auto;
 }
 
 /* ---------------- Responsive ---------------- */
@@ -64,6 +71,15 @@ export default {};
   .section-text > p {
     width: 80%;
     margin: 40px;
+  }
+  .hero{
+    margin-bottom: 300px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section-image img{
+    width: 300px;
+    height: auto;
 }
 }
 

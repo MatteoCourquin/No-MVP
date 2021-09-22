@@ -96,7 +96,7 @@ p {
 .section-text > p {
   margin: 30px 100px;
   /* align-content: center; */
-  text-align: left;
+  text-align: justify;
 }
 
 section:nth-child(3){
@@ -105,11 +105,42 @@ section:nth-child(3){
 
 .section-image {
   margin: 0 30px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-image img{
   height: 300px;
   width: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .detailsFeatures{
+      top: 800px;
+    }
+    .section-image img{
+      height: 150px;
+      width: auto;
+      margin-top: 20px;
+    }
+}
+@media screen and (max-width: 839px) {
+    .detailsFeatures{
+      top: 1200px;
+    }
+    section{
+      flex-direction: column;
+    } 
+    section:nth-child(1){
+      flex-direction: column-reverse;
+    }
+    .section-text > p {
+      margin: 30px 20px;
+    }
+    .section-text {
+      margin: 50px 0;
+    }
 }
 
 </style>

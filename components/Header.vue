@@ -25,6 +25,7 @@ export default {};
   display: flex;
   justify-content: space-between;
   height: 15vh;
+  min-height: 100px;
 }
 
 .navbar {

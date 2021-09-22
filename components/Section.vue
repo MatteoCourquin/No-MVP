@@ -17,4 +17,16 @@ export default {};
   height: auto;
   padding-bottom: 500px;
 }
+
+@media screen and (max-width: 1200px) {
+  .background {
+    padding-bottom: 1000px;
+  }
+}
+@media screen and (max-width: 839px) {
+  .background {
+    padding-bottom: 1400px;
+  }
+}
+
 </style>
