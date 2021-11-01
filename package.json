@@ -13,5 +13,8 @@
     "boxicons": "^2.0.7",
     "core-js": "^3.9.1",
     "nuxt": "^2.15.3"
+  },
+  "scripts": {
+    "build": "nuxt generate"
   }
 }
