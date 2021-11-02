@@ -1,5 +1,6 @@
 export default {
-  target: "static",
+  // Target: https://go.nuxtjs.dev/config-target
+  target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'No-MVP',
@@ -42,9 +43,6 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
   
   router: {
     base : '',
