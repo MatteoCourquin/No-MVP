@@ -1,4 +1,9 @@
 export default {
+  targert: "static",
+  ssr: false,
+  generate: {
+    fallback: true
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'No-MVP',
@@ -43,9 +48,7 @@ export default {
   axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-    target: 'static'
-  },
+  build: {},
   
   router: {
     base : '',
