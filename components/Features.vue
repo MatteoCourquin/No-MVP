@@ -1,26 +1,40 @@
 <template>
-  <div class='features'>
-    <div class="feature" id='feature1'>
-      <img src='../assets/images/logos/Phone.svg' alt='Phone'>
+  <div class="features">
+    <div class="feature" id="feature1">
+      <img src="../assets/images/logos/Phone.svg" alt="Phone" />
+
       <h3>Titre H3</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus sed nesciunt cupiditate ex nisi aut ipsam natus esse repudiandae reprehenderit!</p>
-      <button class='btn-orange'>Start</button>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus sed
+        nesciunt cupiditate ex nisi aut ipsam natus esse repudiandae
+        reprehenderit!
+      </p>
+      <button class="btn-orange">Start</button>
     </div>
 
-    <div class="feature" id='feature2'>
-      <img src='../assets/images/logos/Code.svg' alt='Phone'>
+    <div class="feature" id="feature2">
+      <img src="../assets/images/logos/Code.svg" alt="Phone" />
       <h3>Titre H3</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus sed nesciunt cupiditate ex nisi aut ipsam natus esse repudiandae reprehenderit!</p>
-      <button class='btn-orange'>Start</button>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus sed
+        nesciunt cupiditate ex nisi aut ipsam natus esse repudiandae
+        reprehenderit!
+      </p>
+      <button class="btn-orange">Start</button>
     </div>
 
-    <div class="feature" id='feature3'>
-      <img src='../assets/images/logos/Chart.svg' alt='Phone'>
+    <div class="feature" id="feature3">
+      <img src="../assets/images/logos/Chart.svg" alt="Phone" />
       <h3>Titre H3</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus sed nesciunt cupiditate ex nisi aut ipsam natus esse repudiandae reprehenderit!</p>
-      <button class='btn-orange'>Start</button>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus sed
+        nesciunt cupiditate ex nisi aut ipsam natus esse repudiandae
+        reprehenderit!
+      </p>
+      <button class="btn-orange">Start</button>
     </div>
   </div>
+
 </template>
 
 <script>
@@ -29,13 +43,16 @@ export default {};
 
 <style scoped>
 
-.features{
+.features {
   display: flex;
   justify-content: space-around;
+  position: absolute;
+  margin-top: -190px;
+  width: 100%;
 }
 
-.feature{
-  background: #F3F3F3;
+.feature {
+  background: #f3f3f3;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,50 +64,49 @@ export default {};
   margin: 30px;
 }
 
-img{
+img {
   height: 50px;
   width: auto;
 }
 
-h3{
+h3 {
   margin-top: 30px;
 }
 
-p{
+p {
   margin-top: 30px;
   width: 260px;
 }
 
-button{
+button {
   width: 50%;
   margin-right: 115px;
   margin-top: 30px;
 }
 
-#feature1{
+#feature1 {
   margin-top: 0px;
 }
 
-#feature2{
+#feature2 {
   margin-top: 70px;
 }
 
-#feature3{
+#feature3 {
   margin-top: 20px;
 }
 
 /* -------------------- Responsive -------------------- */
 
 @media screen and (max-width: 1200px) {
-  .features{
+  .features {
     flex-wrap: wrap;
   }
-  #feature3{
+  #feature3 {
     margin-top: 40px;
   }
-  #feature2{
+  #feature2 {
     margin-top: 40px;
   }
 }
-
 </style>

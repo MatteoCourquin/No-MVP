@@ -14,7 +14,7 @@
 
     <div class="section-image">
 
-      <img src="../assets/images/undraw_building_websites_i78t 1.svg" alt="">
+      <img src="../assets/images/logoHero.svg" alt="">
 
     </div>
 
@@ -28,26 +28,59 @@ export default {};
 <style scoped>
 
 .hero {
-  display: flex;
-  text-align: center;
-  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 65vh;
+  min-height: 540px;
+  margin-bottom: max(150px, 20vh);
 }
 
 .section-text {
-  flex: auto;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  align-self: center;
+  justify-content: center;
+  text-align: justify;
 }
 
 .section-text > p {
-  margin: 30px 100px;
-  align-content: center;
-  text-align: left;
+  width: 500px;
+  margin: 40px;
 }
 
 .section-image {
-  margin: 0 30px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.section-image img{
+  width: 400px;
+  height: auto;
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media screen and (max-width: 1200px) {
+  .hero{
+    grid-template-columns: 1fr;
+  }
+  .section-image{
+    margin: 50px 0 40px 0;
+  }
+  .section-text > p {
+    width: 80%;
+    margin: 40px;
+  }
+  .hero{
+    margin-bottom: 300px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section-image img{
+    width: 300px;
+    height: auto;
+}
 }
 
 </style>

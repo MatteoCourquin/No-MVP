@@ -1,8 +1,9 @@
 <template>
   <div>
-    <h1>Section</h1>
+    <div class="background">
     <Features />
-    <DeatilsFeatures />
+    <DetailsFeatures />
+    </div>
   </div>
 </template>
 
@@ -10,4 +11,22 @@
 export default {};
 </script>
 
-<style></style>
+<style>
+.background {
+  background-color: var(--grey);
+  height: auto;
+  padding-bottom: 500px;
+}
+
+@media screen and (max-width: 1200px) {
+  .background {
+    padding-bottom: 1000px;
+  }
+}
+@media screen and (max-width: 839px) {
+  .background {
+    padding-bottom: 1400px;
+  }
+}
+
+</style>
